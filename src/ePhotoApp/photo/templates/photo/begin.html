@@ -1,0 +1,384 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ePhotoApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{% static "images/favicon.ico" %}">
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet"> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static "css/animate.css" %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static "css/icomoon.css" %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+	<!-- animatedresponsiveImagegrid  -->
+	<link rel="stylesheet" href="{% static "css/animatedresponsiveImagegrid.css" %}">
+	<!-- Magnifoc Popup  -->
+	<link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static "js/modernizr-2.6.2.min.js" %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+
+	</head>
+	<body>
+	{% load static %}
+	<div style="height:10px">
+	<nav id="fh5co-main-nav" role="navigation">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
+		<div class="js-fullheight fh5co-table">
+			<div class="fh5co-table-cell js-fullheight">
+				<ul>
+					<li class="active"><a href="index">Home</a></li>
+					<li><a href="gallery">Gallery</a></li>
+					<li><a href="game">Game</a></li>
+					<li><a href="about">About</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+		</div>
+
+	<div id="fh5co-page">
+		<header>
+			<div class="container"style="">
+				<div class="fh5co-navbar-brand">
+					<h1 class="text-center"><a class="fh5co-logo" href="index"><i class="icon-camera2"></i></a></h1>
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				</div>
+			</div>
+		</header>
+<!--		<div id="fh5co-intro-section">-->
+<!--			<div class="container"style="height:100px;">-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-8 col-md-offset-2 animate-box text-center">-->
+<!--						-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+		<div class="animate-box" style="text-align:center;">
+		<h1 class="intro-heading">仲間ハズレをさがせ！！</h1>
+			<h3 class="">好きなジャンルを一つを選んでゲームを始めましょう！</h3>
+		</div>
+
+		<div id="fh5co-photos-section">
+			<div class="container　col-md-2 col-md-offset-5 animate-box">
+						<form action="" class="form-inline justify-content-center" method="get">
+								<div class="form-group">
+									<select class="form-control" id="exampleFormControlSelect1" name="begin">
+										<option value="">ジャンルを選択</option>
+										<option value="person"> 人 </option>
+										<option value="bicycle"> 自転車 </option>
+										<option value="car"> 車 </option>
+										<option value="motorcycle"> バイク </option>
+										<option value="airplane"> 飛行機 </option>
+										<option value="bus"> バス </option>
+										<option value="train"> 電車 </option>
+										<option value="truck"> トラック </option>
+										<option value="boat"> ボート </option>
+										<option value="traffic light"> 信号機 </option>
+										<option value="fire hydrant"> 消火栓 </option>
+										<option value="stop sign"> 一時停止標識 </option>
+										<option value="parking meter"> パーキングメーター </option>
+										<option value="bench"> ベンチ </option>
+										<option value="bird"> 鳥 </option>
+										<option value="cat"> 猫 </option>
+										<option value="dog"> 犬 </option>
+										<option value="horse"> 馬 </option>
+										<option value="sheep"> 羊 </option>
+										<option value="cow"> 牛 </option>
+										<option value="elephant"> ゾウ </option>
+										<option value="bear"> クマ </option>
+										<option value="zebra"> シマウマ </option>
+										<option value="giraffe"> キリン </option>
+										<option value="backpack"> リュック </option>
+										<option value="umbrella"> 傘 </option>
+										<option value="handbag"> カバン </option>
+										<option value="tie"> ネクタイ </option>
+										<option value="suitcase"> スーツケース </option>
+										<option value="frisbee"> フリスビー </option>
+										<option value="skis"> スキー </option>
+										<option value="snowboard"> スノーボード </option>
+										<option value="sports ball"> ボール </option>
+										<option value="kite"> 凧 </option>
+										<option value="baseball bat"> バット </option>
+										<option value="baseball glove"> 野球グローブ </option>
+										<option value="skateboard"> スケートボード </option>
+										<option value="surfboard"> サーフボード </option>
+										<option value="tennis racket"> テニスラケット </option>
+										<option value="bottle"> ボトル </option>
+										<option value="wine glass"> ワイングラス </option>
+										<option value="cup"> コップ </option>
+										<option value="fork"> フォーク </option>
+										<option value="knife"> ナイフ </option>
+										<option value="spoon"> スプーン </option>
+										<option value="bowl"> ボウル </option>
+										<option value="banana"> バナナ </option>
+										<option value="apple"> リンゴ </option>
+										<option value="sandwich"> サンドイッチ </option>
+										<option value="orange"> オレンジ </option>
+										<option value="broccoli"> ブロッコリー </option>
+										<option value="carrot"> ニンジン </option>
+										<option value="hot dog"> ホットドッグ </option>
+										<option value="pizza"> ピザ </option>
+										<option value="donut"> ドーナツ </option>
+										<option value="cake"> ケーキ </option>
+										<option value="chair"> イス </option>
+										<option value="couch"> 紅茶 </option>
+										<option value="potted plant"> 鉢植え </option>
+										<option value="bed"> ベッド </option>
+										<option value="dining table"> テーブル </option>
+										<option value="toilet"> トイレ </option>
+										<option value="tv"> テレビ </option>
+										<option value="laptop"> パソコン </option>
+										<option value="mouse"> マウス </option>
+										<option value="remote"> リモコン </option>
+										<option value="keyboard"> キーボード </option>
+										<option value="cell phone"> 携帯電話 </option>
+										<option value="microwave"> 電子レンジ </option>
+										<option value="oven"> オーブン </option>
+										<option value="toaster"> トースター </option>
+										<option value="sink"> 台所 </option>
+										<option value="refrigerator"> 冷蔵庫 </option>
+										<option value="book"> 本 </option>
+										<option value="clock"> 時計 </option>
+										<option value="vase"> 花瓶 </option>
+										<option value="scissors"> ハサミ </option>
+										<option value="teddy bear"> ぬいぐるみ </option>
+										<option value="hair drier"> ドライヤー </option>
+										<option value="toothbrush"> 歯ブラシ </option>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-success " >ゲームを始める</button>
+
+							</form>
+
+			</div>
+		</div>
+		<div id="fh5co-services-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center animate-box ">
+						<div class="heading-section">
+							<h2>Our Services</h2>
+						</div>
+					</div>
+					<div class="col-md-8 col-md-offset-2 text-center animate-box ">
+						<div class="heading-section">
+							<p>AIによる画像解析によりジャンルごとの写真管理を自動的におこないます</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<a href="gallery">
+								<span><i class="icon-image"></i></span>
+							</a>
+							<h3>Gallery</h3>
+							<p>あなたの写真が保存されています</p>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<a href="upload">
+							<span><i class="icon-cloud-upload"></i></span>
+							</a>
+							<h3>Upload Photos</h3>
+							<p>写真をアップロードしてください</p>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<a href="services">
+							<span><i class="icon-tv"></i></span>
+							</a>
+							<h3>Game</h3>
+							<p>間違えさがしできるよ</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-counters"  data-stellar-background-ratio="0.5" id="counter-animate">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center animate-box">
+						<div class="heading-section">
+							<h2>Fun Facts</h2>
+						</div>
+					</div>
+				</div>
+				<div class="fh5co-narrow-content animate-box">
+					<div class="row" >
+						<div class="col-md-4 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="130" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Client</span>
+						</div>
+						<div class="col-md-4 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="1450" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Photos</span>
+						</div>
+						<div class="col-md-4 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="7497" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Pixels</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3 class="section-title">Focus</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+
+						<div class="col-md-3">
+							<h3 class="section-title">Our Services</h3>
+							<ul>
+								<li><a href="#">Videos</a></li>
+								<li><a href="#">Photography</a></li>
+								<li><a href="#">Editing Photos</a></li>
+								<li><a href="#">Newsletter</a></li>
+								<li><a href="#">API</a></li>
+								<li><a href="#">FAQ / Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<h3 class="section-title">Photos</h3>
+							<ul class="float">
+								<li><a href="#">Natures</a></li>
+								<li><a href="#">Adventure</a></li>
+								<li><a href="#">Wedding</a></li>
+								<li><a href="#">Food &amp; Drinks</a></li>
+								<li><a href="#">Animals</a></li>
+								<li><a href="#">Cars</a></li>
+							</ul>
+							<ul class="float">
+								<li><a href="#">Architecture</a></li>
+								<li><a href="#">Wallpaper Car</a></li>
+								<li><a href="#">Business</a></li>
+								<li><a href="#">Lanscape</a></li>
+								<li><a href="#">Environment</a></li>
+								<li><a href="#">Climate</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<h3 class="section-title">Information</h3>
+							<ul>
+								<li><a href="#">Terms &amp; Condition</a></li>
+								<li><a href="#">License</a></li>
+								<li><a href="#">Privacy &amp; Policy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icon">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2016 Free Html5 <a href="#">Focus</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash </a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<href = "{% static "css/bootstrap.min.css" %}">
+	<!-- jQuery -->
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static "js/jquery.easing.1.3.js" %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+	<!-- Counters -->
+	<script src="{% static "js/jquery.countTo.js" %}"></script>
+	<!-- gridrotator -->
+	<script type="text/javascript" src="{% static "js/jquery.gridrotator.js" %}"></script>
+	<!-- Magnific Popup -->
+	<script type="text/javascript" src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static "js/main.js" %}"></script>
+
+	<script type="text/javascript">
+		$(function() {
+
+			$( '#ri-grid' ).gridrotator( {
+				rows : 3,
+				// number of columns
+				columns : 6,
+				w1024 : { rows : 3, columns : 6 },
+				w768 : {rows : 3,columns : 4 },
+				w480 : {rows : 3,columns : 3 },
+				w320 : {rows : 2,columns : 2 },
+				w240 : {rows : 1,columns : 1 },
+				preventClick : false,
+				slideshow: false,
+			} );
+
+		});
+	</script>
+
+	</body>
+</html>
+
