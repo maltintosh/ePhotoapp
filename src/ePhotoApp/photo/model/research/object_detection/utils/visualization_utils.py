@@ -27,7 +27,7 @@ import abc
 import collections
 # Set headless-friendly backend.
 import matplotlib; matplotlib.use('TkAgg')  # pylint: disable=multiple-statements
-import matplotlib.pyplot as plt  # pylint: disable=g-import-not-at-top
+# import matplotlib.pyplot as plt  # pylint: disable=g-import-not-at-top plt消した
 import numpy as np
 import PIL.Image as Image
 import PIL.ImageColor as ImageColor
@@ -854,6 +854,7 @@ def add_cdf_image_summary(values, name):
     values: a 1-D float32 tensor containing the values.
     name: name for the image summary.
   """
+  '''
   def cdf_plot(values):
     """Numpy function to plot CDF."""
     normalized_values = values / np.sum(values)
@@ -902,7 +903,7 @@ def add_hist_image_summary(values, bins, name):
     return image
   hist_plot = tf.py_func(hist_plot, [values, bins], tf.uint8)
   tf.summary.image(name, hist_plot)
-
+'''
 
 class EvalMetricOpsVisualization(six.with_metaclass(abc.ABCMeta, object)):
   """Abstract base class responsible for visualizations during evaluation.
