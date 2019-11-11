@@ -26,7 +26,7 @@ from __future__ import print_function
 import abc
 import collections
 # Set headless-friendly backend.
-import matplotlib; matplotlib.use('TkAgg')  # pylint: disable=multiple-statements
+#import matplotlib; matplotlib.use('TkAgg')  # pylint: disable=multiple-statements
 # import matplotlib.pyplot as plt  # pylint: disable=g-import-not-at-top plt消した
 import numpy as np
 import PIL.Image as Image
