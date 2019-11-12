@@ -25,7 +25,7 @@ SECRET_KEY = '4!=)84ll08rb@gs_6(1r_v^w_grsc!oeavg$z9(!j-(yauilzs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.15.39.92']
+ALLOWED_HOSTS = ['3.15.39.92','127.0.0.1']
 
 
 # Application definition
@@ -80,14 +80,14 @@ WSGI_APPLICATION = 'ePhotoApp.wsgi.application'
 
 DATABASES = {
     'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': 'ephotoapp',
-        'USER': 'kai',
-        'PASSWORD': '1500',
-        'HOST': 'localhost',
-        'PORT': '',
+       'ENGINE': 'django.db.backends.sqlite3',
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#        'NAME': 'ephotoapp',
+#         'USER': 'kai',
+#         'PASSWORD': '1500',
+#         'HOST': 'localhost',
+#         'PORT': '',
 # 変えるところ2: DBエンジンをPostgreSQLにして、NAMEとUSERとPASSWORDをそれぞれ編集・追記してください。
     }
 }
